@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Pirate Phrase Generator</title>
+  <script src="PiratePhrase.js"></script>
+</head>
+<body>
+  <h1>Random Pirate Phrase Generator</h1>
+
+  <button id="generate-pirate-phrase-button">Generate Pirate Phrase</button>
+
+  <p id="pirate-phrase"></p>
+
+  <script>
+    // Display the random pirate phrase
+    function displayPiratePhrase() {
+      const piratePhraseElement = document.getElementById("pirate-phrase");
+      piratePhraseElement.innerHTML = generateRandomPirateSentenceOrQuestion();
+    }
+
+    // Add an event listener to the generate pirate phrase button
+    document.getElementById("generate-pirate-phrase-button").addEventListener("click", displayPiratePhrase);
+  </script>
+</body>
+</html>
